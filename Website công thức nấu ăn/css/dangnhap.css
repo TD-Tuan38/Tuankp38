@@ -1,0 +1,87 @@
+body {
+  background-color: #faebc4; /* Màu nền */
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  justify-content: center;
+}
+
+.logo {
+  margin-bottom: 50px; /* Khoảng cách giữa logo và form */
+  margin-top: 10px;
+}
+
+.logo img {
+  height: 200px; /* Điều chỉnh kích thước logo */
+}
+
+.registration-form {
+  background-color: #ffecb3; /* Màu vàng của form */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  width: 350px;
+  
+}
+
+.form {
+  display: flexbox;
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  border-radius: 25px; /* Bo tròn input */
+}
+
+.btn-primary {
+  background-color: #f44336; /* Màu đỏ của nút */
+  border: none;
+  border-radius: 25px; /* Bo tròn nút */
+}
+
+.close-btn{
+  position: absolute;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.back-btn{
+  position: absolute;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-btn {
+  right: 10px;
+}
+
+.back-btn {
+  left: 10px;
+}
+
+.btn{
+  height: auto;
+  position: relative;
+  
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

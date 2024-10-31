@@ -1,0 +1,300 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-section .badge {
+  margin-right: 10px;
+}
+
+.filter-section button {
+  margin-right: 5px;
+}
+
+.ingredient-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.ingredient-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.ingredient-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.ingredient-info h3 {
+  margin-bottom: 5px;
+}
+
+.ingredient-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.logo-bar {
+  background-color: #ffecb3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  height: auto;
+  align-content: center;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.logo img {
+  height: 50px;
+  align-content: center;
+}
+
+.navbar-brand img {
+  width: 40px;
+  /* Kích thước của hình tròn */
+  height: 40px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.navbar {
+  margin-top: 0;
+  background-color: #f7dc9c;
+  box-shadow: 2px #ffb303;
+}
+
+.navbar .form-inline {
+  margin: 0 auto;
+
+}
+
+    /* CSS để chỉnh kích thước hình ảnh */
+    .thumbnail-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Đảm bảo hình ảnh không bị kéo ra ngoài kích thước */
+        border-radius: 5px; /* Bo góc cho hình ảnh */
+        
+    }
+
+.hh1{
+    list-style: none;
+    
+}
+
+.form-control {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+
+.btn-outline-success {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-login img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.nav-item .nav-link {
+  margin-left: 50px;
+  background-color: #F7DC9C;
+  margin-bottom: 10%;
+}
+
+.mon-an img {
+  height: 200px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.avt {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.khung-1 {
+  background-color: #faebc4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  height: 100%;
+}
+
+.khung-2 {
+  background-color: #F7DC9C;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.khung-3 {
+  background-color: #faebc4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.icon {
+  height: 30px;
+}
+
+.bar {
+  background-color: #f7dc9c;
+}
+
+.sub-menu {
+  background-color: #f7dc9c;
+
+}
+
+.sub-menu a {
+  margin-bottom: 5px;
+  border: white solid 1px;
+  background-color: #faebc4;
+  border-radius: 5px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  /* Đẩy menu sang phải */
+}
+
+.menu {
+  width: 40px;
+  border: none;
+  border-radius: 0px;
+}
+
+.navbar {
+  margin-top: 0;
+  background-color: #f7dc9c;
+  box-shadow: 2px #ffb303;
+
+}
+
+.btn-bd-cn {
+  border-color: #0066ff;
+  border-radius: 5px;
+
+}
+
+.btn-bd-tc {
+  border-color: red;
+  border-radius: 5px;
+}
+
+.dropdown-menu {
+  left: -7px;
+  /* Điều chỉnh giá trị âm để di chuyển sang trái */
+  right: auto;
+}
+
+.badge {
+  font-size: 20px;
+}
+
+.btn-ac-all {
+  border: #0066ff solid 1px;
+  background-color: #ffffff;
+  margin-left: auto;
+}
+
+.btn-not-all {
+  border: red solid 1px;
+  background-color: #ffffff;
+  margin-left: auto;
+}
+
+
+.input-group {
+  margin-top: 20px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.form-control {
+  border-right: none;
+
+}
+
+.btn-outline-secondary {
+  border-radius: 0 25px 25px 0;
+  background-color: white;
+  border: 0;
+}
+
+.btn-outline-secondary:hover {
+  background-color: red;
+}
+
+.btn {
+  width: auto;
+}
+
+.dropdown-menu{
+  padding: 0px;
+  background-color: #F7DC9C;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.dropdown-menu li {
+  list-style-type: none;
+  background-color: #faebc4;
+  border: #ffffff solid 1px;
+  padding: 0px;
+  margin: 10px 10px 0px 10px;
+  border-radius: 5px;
+}
+
+.dropdown-menu ul {
+  padding-left: 0px;
+}
+
+footer {
+  background-image: url(jisoo.jpg);
+  background-size: cover; /* Điều chỉnh kích thước ảnh để vừa với footer */
+  background-position: center; /* Căn giữa ảnh */
+  padding: 20px;
+  color: white; /* Màu chữ trắng để dễ đọc trên nền ảnh */
+  text-align: center;
+  margin-top: 50px;
+}

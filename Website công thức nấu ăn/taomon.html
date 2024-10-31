@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/taomon.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bar row m-0 p-0">
+        <!-- Brand -->
+        <a class="navbar-brand col-1" href="#"><img src="image/logo.png" style="width: 40px;height: 40px;" class="rounded-circle" alt=""></a>
+        <div class="col-1"></div>
+        <div class="col-8">
+            <div class="container mb-3">
+                <div class="input-group">
+                  <input type="text" class="form-control border-0" placeholder="Tìm kiếm nguyên liệu .....">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">
+                      <a href="" class=""><img src="image/icon_search.png" style="width: 20px;height: 20px;" alt=""></a>
+                    </button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown col-1 mr-auto">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              <img src="image/menu.png" style="width: 40px;height: 40px;" alt="#" class="menu">
+            </a>
+            <div class="dropdown-menu sub-menu p-2">
+              <a class="dropdown-item" href="trangchu.html">Trang Chủ</a>
+              <a class="dropdown-item" href="admin_ql_user.html">Quản Lý Người Dùng</a>
+              <a class="dropdown-item" href="admin_ql_user.html">Thông Tin Tài Khoản</a>
+              <a class="dropdown-item" href="dangnhap.html">Thoát</a>
+            </div>
+          </li>
+        </ul>
+    </nav>
+
+<div class="form-container">
+    <div class="form-header">
+        <h2>Chia sẻ món ăn của bạn!</h2>
+        <p>Chia sẻ với mọi người thành phẩm nấu nướng của bạn nào!</p>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="recipe-name">Tên món:</label>
+            <input type="text" class="form-control" id="recipe-name" placeholder="Món canh bí ngon nhất nhà mình">
+        </div>
+        <div class="form-group">
+            <label for="recipe-image">Hình ảnh:</label>
+            <input type="file" id="dishImages" class="form-control" accept="image/*">
+            <div id="imagePreview"></div>
+        </div>
+        <div class="form-group">
+            <label for="description">Mô tả:</label>
+            <textarea class="form-control" id="description" rows="3" placeholder="Hãy chia sẻ với mọi người về món này của bạn nhé..."></textarea>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="servings">Khẩu phần:</label>
+                <input type="number" class="form-control" id="servings" placeholder="2 người">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="time">Thời gian nấu:</label>
+                <input type="text" class="form-control" id="time" placeholder="1 tiếng 30 phút">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ingredients">Nguyên Liệu</label>
+            <div id="ingredients-list">
+                <div class="form-row align-items-center mb-2">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="250g bột">
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-danger remove-ingredient"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+                <div class="form-row align-items-center mb-2">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="100ml nước">
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-danger remove-ingredient"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" id="add-ingredient">+ Nguyên liệu</button>
+        </div>
+        <div class="form-group">
+            <label for="steps">Các bước</label>
+            <div id="steps-list">
+                <div class="form-row mb-2">
+                    <div class="col">
+                        <textarea class="form-control" rows="2" placeholder="Trộn bột và nước đến khi đặc lại"></textarea>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-danger remove-step"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+                <div class="form-row mb-2">
+                    <div class="col">
+                        <textarea class="form-control" rows="2" placeholder="Đậy kín hỗn hợp lại và để ở nhiệt độ phòng trong vòng 24-36 tiếng"></textarea>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-danger remove-step"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" id="add-step">+ Bước làm</button>
+        </div>
+        <button id="saveDishBtn" class="btn btn-success btn-block">Chia Sẻ Công Thức</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#add-ingredient').click(function() {
+            $('#ingredients-list').append(`
+                <div class="form-row align-items-center mb-2">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nguyên liệu mới">
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-danger remove-ingredient"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+            `);
+        });
+
+        $(document).on('click', '.remove-ingredient', function() {
+            $(this).closest('.form-row').remove();
+        });
+
+        $('#add-step').click(function() {
+            $('#steps-list').append(`
+                <div class="form-row mb-2">
+                    <div class="col">
+                        <textarea class="form-control" rows="2" placeholder="Bước mới"></textarea>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-danger remove-step"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+            `);
+        });
+
+        $(document).on('click', '.remove-step', function() {
+            $(this).closest('.form-row').remove();
+        });
+
+        $('#dishImages').change(function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#imagePreview').html(`<img src="${e.target.result}" class="img-fluid thumbnail-image" alt="Image preview">`);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+        $('#saveDishBtn').click(function(event) {
+            event.preventDefault();
+            const dishName = $('#recipe-name').val();
+            const dishTime = $('#time').val();
+            const dishKhauPhan = $('#servings').val();
+            const dishDescription = $('#description').val();
+            const ingredients = [];
+            $('#ingredients-list input').each(function() {
+                ingredients.push($(this).val());
+            });
+            const steps = [];
+            $('#steps-list textarea').each(function() {
+                steps.push($(this).val());
+            });
+
+            const dishImage = $('#imagePreview img').attr('src');
+
+            const dishData = {
+                dishName,
+                dishTime,
+                dishKhauPhan,
+                dishImage,
+                dishDescription,
+                ingredients,
+                steps
+            };
+
+            // Save the dish data to localStorage
+            const existingDishes = JSON.parse(localStorage.getItem('savedDishes')) || [];
+            existingDishes.push(dishData);
+            localStorage.setItem('savedDishes', JSON.stringify(existingDishes));
+
+            alert('Công thức đã được lưu thành công!');
+            window.location.href = 'admin_duyet.html';
+        });
+    });
+</script>
+
+</body>
+</html>

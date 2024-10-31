@@ -1,0 +1,153 @@
+/* Các kiểu dáng tùy chỉnh cho bảng */
+table th,
+table td {
+  vertical-align: middle;
+  /* Căn giữa nội dung theo chiều dọc */
+
+}
+
+table th:first-child,
+table td:first-child {
+  text-align: center;
+  /* Căn giữa ô checkbox */
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  /* Điều chỉnh kích thước nút */
+  font-size: 0.875rem;
+}
+
+.avt {
+  width: 30px;
+}
+
+
+
+.header {
+  background-color: #faebc4;
+  border-radius: 10px;
+  border: aqua solid 2px;
+  width: 100%;
+}
+
+.btn-xoa {
+  border-radius: 10px;
+  background-color: gray;
+  border: 0px;
+}
+
+.btn-them {
+  border-radius: 10px;
+  background-color: aquamarine;
+  border: 0px;
+}
+
+.content {
+  background-color: #faebc4;
+  border-radius: 10px;
+}
+
+.bang {
+  background-color: white;
+}
+
+.navbar-brand img {
+  width: 40px;
+  /* Kích thước của hình tròn */
+  height: 40px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.navbar {
+  margin-top: 0;
+  background-color: #f7dc9c;
+  box-shadow: 2px #ffb303;
+  border-radius: 10px;
+}
+
+.navbar .form-inline {
+  margin: 0 auto;
+}
+
+
+.form-control {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+
+.btn-outline-success {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-login {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.menu {
+  width: 40px;
+  border: none;
+  border-radius: 0px;
+}
+
+.nav-item .nav-link {
+  margin-left: 50px;
+  background-color: #F7DC9C;
+  margin-bottom: 10%;
+}
+
+.bar {
+  background-color: #f7dc9c;
+}
+
+.sub-menu {
+  background-color: #f7dc9c;
+
+}
+
+.sub-menu a {
+  margin-bottom: 5px;
+  border: white solid 1px;
+  background-color: #faebc4;
+  border-radius: 5px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  /* Đẩy menu sang phải */
+}
+
+.dropdown-menu {
+  left: -55px;
+  /* Điều chỉnh giá trị âm để di chuyển sang trái */
+  right: auto;
+}
+
+.dropdown-menu{
+  padding: 0px;
+  background-color: #F7DC9C;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.dropdown-menu li {
+  list-style-type: none;
+  background-color: #faebc4;
+  border: #ffffff solid 1px;
+  padding: 0px;
+  margin: 10px 10px 0px 10px;
+  border-radius: 5px;
+}
+
+.dropdown-menu ul {
+  padding-left: 0px;
+}

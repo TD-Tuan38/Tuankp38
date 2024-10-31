@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Danh Sách Tài Khoản</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admin_ql_user.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bar row">
+        <!-- Brand -->
+        <a class="navbar-brand col-1" href="#"><img src="image/logo.png" alt=""></a>
+        <div class="col-1"></div>
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown col-1 mr-auto">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              <img src="image/menu.png" alt="#" class="menu">
+            </a>
+            <div class="dropdown-menu sub-menu p-2">
+              <a class="dropdown-item" href="admin_duyet.html">Kiểm duyệt bài viết</a>
+              <a class="dropdown-item" href="admin_ql_user.html">Quản lý người dùng</a>
+              <a class="dropdown-item" href="dangnhap.html">Thoát</a>
+            </div>
+          </li>
+        </ul>
+    </nav>
+
+  <div class="container mt-5 a">
+
+
+    <div class="container header py-2 pl-5"><h2 class="">Danh Sách Tài Khoản</h2></div>
+
+    <div class="container mt-4 content py-3">
+        <div>
+            <button class="btn-them mr-5">+ Tạo mới tài khoản</button>
+            <button class="btn-xoa">Xóa tất cả</button>
+        </div>
+
+        <hr>
+
+        <table class="table table-bordered mt-3 bang">
+            <thead>
+              <tr>
+                <th><input type="checkbox" id="selectAll"></th>
+                <th>ID Tài Khoản</th>
+                <th>Mật khẩu</th>
+                <th>Tên Tài Khoản</th>
+                <th>Ngày Sinh</th>
+                <th>Ảnh</th>
+                <th>Giới Tính</th>
+                <th>Quyền Hạn</th>
+                <th>Tính Năng</th>
+              </tr>
+            </thead>
+
+
+            <tbody>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>M03082003</td>
+                <td>1</td>
+                <td>Trần Duy Tuấn</td>
+                <td>03/08/2003</td>
+                <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                <td>Nam</td>
+                <td>Administrator</td>
+                <td>
+                  <button class="btn btn-sm btn-danger ml-2">
+                    <i class="fas fa-trash-alt">Xóa</i>
+                  </button>
+                  <button class="btn btn-sm btn-warning ml-3 dropdown-toggle ml-3" type="button" data-toggle="dropdown">
+                    <i class="fas fa-pencil-alt">Sửa</i>
+                  <div class="dropdown-menu">
+                    <input type="text" class="dropdown-item" name="" id="" placeholder="username">
+                    <input type="text" class="dropdown-item" name="" id="" placeholder="password">
+                    <input type="text" class="dropdown-item" name="" id="" placeholder="Tên">
+                    <input type="text" class="dropdown-item" name="" id="" placeholder="Ngày sinh">
+                    <input type="text" class="dropdown-item" name="" id="" placeholder="Giới tính">
+                    <input type="button" class="dropdown-item btn btn-primary dropdown-toggle" data-toggle="dropdown" name="" id="" placeholder="Quyền hạn">
+                    <input type="button" class="dropdown-item" name="" id="">
+                  </div>
+                </td>
+              </tr>
+              </div>
+            </tbody>
+
+            <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+              
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>M03082003</td>
+                  <td>Trần Duy Tuấn</td>
+                  <td>03/08/2003</td>
+                  <td><img src="image/ngau.jpg" alt="avt" class="avt"></td>
+                  <td>Nam</td>
+                  <td>Administrator</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger ml-2">
+                      <i class="fas fa-trash-alt">Xóa</i>
+                    </button>
+                    <button class="btn btn-sm btn-warning ml-3">
+                      <i class="fas fa-pencil-alt">Sửa</i>
+                    </button>
+                  </td>
+                </tr>
+                </div>
+              </tbody>
+          </table>
+
+          <div>
+            <ul class="pagination justify-content-end ">
+                <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">Trước</a></li>
+                <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">...</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">Sau</a></li>
+              </ul>
+          </div>
+
+    </div>
+    
+      
+  </div>
+
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+  <script src="js/admin_ql_user.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Công Thức Món Ăn</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/monan.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bar row m-0 p-0">
+        <!-- Brand -->
+        <a class="navbar-brand col-1" href="#"><img src="image/logo.png" style="width: 40px;height: 40px;" class="rounded-circle" alt=""></a>
+        <div class="col-1"></div>
+        <div class="col-8">
+            <div class="container mb-3">
+                <div class="input-group">
+                  <input type="text" class="form-control border-0" placeholder="Tìm kiếm nguyên liệu .....">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">
+                      <a href="" class="fas fa-search"><img src="image/icon_search.png" style="width: 20px;height: 20px;" alt=""></a>
+                    </button>
+                  </div>
+                </div>
+            </div>
+              
+        </div>
+        <div class="col-1"></div>
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown col-1 mr-auto" >
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              <img src="image/menu.png" style="width: 40px;height: 40px;" alt="#" class="menu">
+            </a>
+            <div class="dropdown-menu sub-menu p-2">
+              <a class="dropdown-item" href="admin_duyet.html">Kiểm Duyệt Bài Viết</a>
+              <a class="dropdown-item" href="admin_ql_user.html">Quản Lý Người Dùng</a>
+              <a class="dropdown-item" href="admin_ql_user.html">Thông Tin Tài Khoản</a>
+              <a class="dropdown-item" href="dangnhap.html">Thoát</a>
+            </div>
+          </li>
+        </ul>
+    </nav>
+    
+
+    <div class="container mt-4 border-0">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4 border-0 bo-1">
+                    <img src="image/mon_an.jpg" id="dishImage" class="card-img-top rounded-lg" alt="Món ăn">
+                    
+                </div>
+                <div class="card mb-4 border-0 bo-1">
+                    <h2 class="card-header" id="dishName">Thịt Heo Xào Cà Chua</h2>
+                </div>
+
+                <div class="card mb-4 border-0 bo-1">
+                    <h3 class="card-header">Nguyên Liệu</h3>
+                        <div class="row mt-3 ml-2">
+                            <div class="col-4 row">
+                                <div class="col-2"><img src="image/icon_clock.png" style="width: 20px;height: 20px;" alt=""></div>
+                                <div class="col-10"><span >30 phút</span></div>
+                            </div>
+                             <div class="col-4 row">
+                                <div class="col-2"><img src="image/icon_user.png" style="width: 20px;height: 20px;" alt=""></div>
+                                <div class="col-10"><span> 2 người</span></div>
+                             </div>
+                             <div class="col-4"></div>   
+                                
+                        </div>                   
+                    <ul class="card-body ml-4">
+                        <li >200g thịt heo</li>
+                        <li >3 quả cà chua</li>
+                        <li >Gia vị: Bột canh, hạt nêm, nước mắm</li>
+                    </ul>
+                </div>
+
+                <div class="card mb-4 border-0 bo-1">
+                    <h3 class="card-header">Hướng Dẫn Chế Biến</h3>
+                    <div class="card-body">
+                        <ol>
+                            <li>Sơ chế thịt heo và cà chua: ...</li>
+                            <li>Cho thịt heo vào chảo đảo đều rồi nêm gia vị vừa ăn. ...</li>
+                            <li>Chỉ việc mang ra và ăn thôi 😋😋😋</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="card mb-4 border-0 bo-1">
+                    <h3 class="card-header">Viết Bởi</h3>
+                    <div class="card-body row">
+                        <div class="col-6 row">
+                            <div class="col-2"><img src="image/jisoo.jpg" style="width: 40px;height: 40px;" class="rounded-circle" alt=""></div>
+                            <div class="col-10"><h4 class="card-title">Jisoo</h4></div>
+                        </div>
+                        <div class="col-6"></div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4 border-0 bo-1">
+                    <div class="card-body row">
+                        <div class="col-2"><img src="image/jisoo.jpg" style="width: 32px;height: 32px;" class="rounded-circle" alt=""></div>
+                        <div class="col-10"><h4 class="card-title">Jisoo</h4></div>
+                        <div class="col-1"></div>
+                        <div class="col-11"><span class="card-text">Món ăn phổ biến của người Việt Nam hiện nay và rất ngon!!!</span></div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="card mb-4 border-0 bo-1">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <button id="saveDishBtn" class="btn btn-primary ml-4">Lưu Món</button>
+                            <button class="btn btn-secondary ml-5">Chia Sẻ</button>
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="card mb-4 border-0 bo-1 ">
+                    <div class="card-header">
+                        Bình Luận
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <div class="col-10"><textarea class="form-control" rows="2" placeholder="Thêm bình luận..."></textarea>
+                            </div>
+                            <div class="col-2 ">
+                                <button type="submit" id="sendcmt" class="btn mt-2 float-right">
+                                    <a href="" class="fas fa-paper-plane"><img src="image/send.png" id="aaaa" alt=""></a>
+                                </button>
+                            </div>
+                        </div>
+                
+                        <div class="media mt-4">
+                            <img src="image/rose.jpg" style="width: 40px;height: 40px;" class="mr-3 rounded-circle" alt="Avatar">
+                            <div class="media-body card px-3 cmt-1">
+                                <h5 class="mt-1">Rosé</h5>
+                                Món ăn rất ngon và rất dễ nấu, cả nhà tôi đã khen rất nhiều về món, tôi cảm thấy rất hạnh phúc. Cảm ơn
+                                bạn rất nhiều vì món ăn ngon này, love you !!!!
+                                <div class="mt-2 row">
+                                    <div class="col-6 row">
+                                        <div class="col-4"><img src="image/icon_heart.png" style="width: 20px;height: 20px;" alt="">
+                                        </div>
+                                        <div class="col-8"><i class="fas fa-heart text-danger">10</i> </div>
+                                    </div>
+                                    <div class="col-6 row mb-3">
+                                        <div class="col-4"><img src="image/icon_cmt.png" style="width: 20px;height: 20px;" alt=""></div>
+                                        <div class="col-8"><i class="far fa-comment"> 0</i> </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#saveDishBtn').click(function() {
+                let dishName = $('#dishName').text();
+                let dishImage = $('#dishImage').attr('src');
+                let savedDishes = JSON.parse(localStorage.getItem('savedDishes')) || [];
+                savedDishes.push({ name: dishName, image: dishImage });
+                localStorage.setItem('savedDishes', JSON.stringify(savedDishes));
+                alert('Món ăn đã được lưu!');
+            });
+        });
+    </script>
+</body>
+</html>

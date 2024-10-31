@@ -1,0 +1,174 @@
+body {
+    background-color: #fdeecb;
+    font-family: 'Arial', sans-serif;
+}
+/* Các tùy chỉnh CSS bổ sung */
+.card-text {
+    height: 70px; /* Giới hạn chiều cao mô tả món ăn */
+    overflow: hidden;
+  }
+  /* Kiểu dáng cho logo trong hình tròn */
+.navbar-brand img {
+    width: 40px; /* Kích thước của hình tròn */
+    height: 40px;
+    object-fit: cover; /* Đảm bảo ảnh vừa vặn trong hình tròn mà không bị méo */
+    border: 2px solid #fff; /* Viền trắng cho hình tròn */
+    margin-right: 10px; /* Khoảng cách giữa logo và chữ */
+	border-radius:50%;
+  }
+  .navbar {
+        margin-top:0;
+        background-color: #f7dc9c;
+        box-shadow: 2px #ffb303;
+      }
+      
+      .navbar .form-inline {
+        margin: 0 auto; /* Căn giữa form tìm kiếm */
+       
+      }
+     
+      /* Tùy chỉnh ô input */
+      .form-control {
+        border-radius: 20px; /* Bo tròn góc của ô input */
+        padding: 0.5rem 1rem; /* Điều chỉnh padding của ô input */ 
+      }
+      
+      /* Tùy chỉnh nút tìm kiếm */
+      .btn-outline-success {
+        border-radius: 20px; /* Bo tròn góc của nút */
+        padding: 0.5rem 1rem; /* Điều chỉnh padding của nút */
+      }
+      
+      .navbar-login img {
+        width: 40px; /* Kích thước của hình tròn */
+        height: 40px;
+        object-fit: cover; /* Đảm bảo ảnh vừa vặn trong hình tròn mà không bị méo */
+        border: 2px solid #fff; /* Viền trắng cho hình tròn */
+        margin-right: 10px; /* Khoảng cách giữa logo và chữ */
+        border-radius:50%;
+      }
+      
+      .nav-item .nav-link{
+        margin-left:50px;
+        background-color: #F7DC9C;
+        margin-bottom:10%;
+      }
+      .navbar-nav {
+        margin-left: auto; /* Đẩy menu sang phải */
+    }
+    .menu{
+      width: 40px;
+      border: none;
+      border-radius: 0px;
+    }
+    .bar {
+      background-color: #f7dc9c;
+    }
+  
+    .sub-menu{
+      background-color: #f7dc9c;
+  
+    }
+  
+    .sub-menu a{
+      margin-bottom: 5px;
+      border: white solid 1px;
+      background-color: #faebc4;
+      border-radius: 5px;
+    }
+  
+    .navbar-nav {
+      margin-left: auto; 
+  }
+  .menu{
+    width: 40px;
+    border: none;
+    border-radius: 0px;
+  }
+  
+  .navbar {
+          margin-top:0;
+          background-color: #f7dc9c;
+          box-shadow: 2px #ffb303;
+          border-radius: 10px;
+        }
+  .dropdown-menu{
+      left: -100px;
+      right: auto; 
+      }
+  
+  .input-group {
+      margin-top: 20px;
+      border-radius: 0; 
+    }
+  
+    .form-control {
+      border-right: none;
+    }
+  
+    .btn-outline-secondary {
+      border-radius: 0 25px 25px 0; 
+      background-color: white;
+      border:0;
+    }
+    .btn-outline-secondary:hover{
+      background-color: red;
+    }
+  
+
+      
+
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius:1%;
+    margin-bottom:50px;
+}
+.card img{
+  height: 100%;
+  margin:0%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+.card-body2{
+  margin-top:100px;
+}
+#card-i:hover #a{
+  width:100px;
+  height: 100px;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+#recipe-list a{
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kiểm duyệt bài viết</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admin_duyet.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bar row">
+    <!-- Brand -->
+    <a class="navbar-brand col-1 ml-5" href="#"><img src="image/logo.png" alt=""></a>
+    <div class="col-1"></div>
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <!-- Dropdown -->
+      <li class="nav-item dropdown col-1 mr-auto">
+        <a class="nav-link dropdown-toggle mr-5" href="#" id="navbardrop" data-toggle="dropdown">
+          <img src="image/menu.png" alt="#" class="menu">
+        </a>
+        <div class="dropdown-menu sub-menu p-2">
+          <a class="dropdown-item" href="admin_duyet.html">Kiểm duyệt bài viết</a>
+          <a class="dropdown-item" href="admin_ql_user.html">Quản lý người dùng</a>
+          <a class="dropdown-item" href="dangnhap.html">Thoát</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="container khung-1 mt-5 py-3">
+      <div class="filter-section row pl-4">
+        <div class="col-12 row">
+          <div class="badge badge-warning col-6 ml-3">Đang chờ phê duyệt 20+</div>
+          <div class="col-2 text-center">
+            <button class="btn btn-ac-all">Phê Duyệt</button>
+          </div>
+          <div class="col-2">
+            <button class="btn btn-not-all">Từ Chối</button>
+          </div>
+        </div>
+        <div class="col-12 row container align-items-end">
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control border-0" placeholder="Tìm kiếm.....">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">
+                  <a href="" class="fas fa-search"><img src="image/icon_search.png" style="width: 20px;height: 20px;" alt=""></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-secondary dropdown-toggle col-3" type="button" data-toggle="dropdown">
+            <span>Mới nhất trước</span>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a class="dropdown-item" href="#">Lâu nhất trước</a></li>
+                <li><a class="dropdown-item" href="#">a-z</a></li>
+                <li><a class="dropdown-item" href="#">z-a</a></li>
+              </ul>
+            </div>
+          </button>
+          <button class="btn btn-secondary col-2 collect-all">Chọn Tất Cả</button>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Danh sách công thức chờ duyệt</h2>
+        <div id="recipes-list"></div>
+      <div>
+        <ul class="pagination justify-content-end">
+          <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">Trước</a></li>
+          <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">...</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Sau</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Tên Công Ty Của Bạn</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+     $(document).ready(function() {
+        function displayDishes() {
+            const savedDishes = JSON.parse(localStorage.getItem('savedDishes')) || [];
+            $('#recipes-list').empty();
+            savedDishes.forEach((dish, index) => {
+                const dishHTML = `
+                <div class="khung-2 m-4 p-2">
+
+        <div class="khung-3 m-3 px-2 mb-2">
+
+          <div class="row">
+            <div class="col-7">
+              <div class="row mt-3">
+                <div class="col-12">
+                  <a href="Monan.html"><h2>${dish.dishName}</h2></a>
+                </div>
+                <div class="col-6 mt-3">
+                  <img src="image/icon_clock.png" alt="icon" class="icon mr-2"><span>${dish.dishTime}</span>
+                </div>
+                <div class="col-6 mt-3">
+                  <img src="image/icon_user.png" alt="icon" class="icon mr-2"><span>${dish.dishKhauPhan} người</span>
+                </div>
+                <div class="col-6 mt-3">
+                  <img src="image/ngau.jpg" alt="avt" class="avt">
+                  <span>Jisoo</span>
+                </div>
+
+                <div class="col-6 mt-3 pt-2">
+                  2 phút trước
+                </div>
+              </div>
+            </div>
+
+            <div class="col-5 mon-an mt-3 mb-3">
+              <img src="${dish.dishImage}" alt="anh">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-1 check">
+            <input type="checkbox" id="checkbox">
+          </div>
+          <div class="col-2">
+
+          </div>
+          <div class="col-3">
+            <button class="btn-bd-cn">Chấp nhận</button>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-3">
+            <button class="btn-bd-tc delete-dish" data-index="${index}">Từ chối</button>
+          </div>
+          <div class="col-2"></div>
+        </div>
+
+      </div>
+                    
+                `;
+                $('#recipes-list').append(dishHTML);
+            });
+        }
+
+        $(document).on('click', '.delete-dish', function() {
+            const index = $(this).data('index');
+            let savedDishes = JSON.parse(localStorage.getItem('savedDishes')) || [];
+            savedDishes.splice(index, 1);
+            localStorage.setItem('savedDishes', JSON.stringify(savedDishes));
+            displayDishes();
+        });
+
+        $(document).on('click', '.delete-dish', function() {
+            const index = $(this).data('index');
+            let savedDishes = JSON.parse(localStorage.getItem('savedDishes')) || [];
+            savedDishes.splice(index, 1);
+            localStorage.setItem('savedDishes', JSON.stringify(savedDishes));
+            displayDishes();
+        });
+
+        displayDishes();
+    });
+  </script>
+</body>
+</html>
